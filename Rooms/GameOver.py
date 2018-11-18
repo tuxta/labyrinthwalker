@@ -4,8 +4,8 @@ from Objects.GameOverText import GameOverText
 
 class GameOver(Level):
 
-    def __init__(self, screen):
-        Level.__init__(self, screen)
+    def __init__(self, screen, joysticks):
+        Level.__init__(self, screen, joysticks)
 
         # - Set Background image - #
         self.set_background_image("background.jpg")

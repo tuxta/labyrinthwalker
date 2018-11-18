@@ -4,8 +4,8 @@ from Objects import Goal, Block, BlockDoor, Player, Banner, Monster
 
 class L_Hard(Level):
 
-    def __init__(self, screen):
-        Level.__init__(self, screen)
+    def __init__(self, screen, joysticks):
+        Level.__init__(self, screen, joysticks)
 
         # - Set Background image - #
         self.set_background_image("background.jpg")
