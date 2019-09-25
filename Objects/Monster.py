@@ -14,6 +14,6 @@ class Monster(RoomObject):
         # - Listen for collisions with Block objects - #
         self.register_collision_object('Block')
 
-    def handle_collision(self, other):
+    def handle_collision(self, other, other_type):
         # - Reverse Direction when encountering a Block - #
         self.x_speed *= -1

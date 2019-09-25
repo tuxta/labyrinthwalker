@@ -22,8 +22,7 @@ class Player(RoomObject):
         self.register_collision_object('Goal')
         self.register_collision_object('Monster')
 
-    def handle_collision(self, other):
-        other_type = type(other).__name__
+    def handle_collision(self, other, other_type):
         if other_type == 'Block':
             self.blocked()
         elif other_type == 'Goal':
